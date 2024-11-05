@@ -86,76 +86,10 @@ footer {
 	font-size: x-small;
 }
 
-#txt_pekin {
+#txt_pekin, #txt_agra, #txt_te_paris, #txt_new_york, #txt_dc, #txt_rome, #txt_sydney, #txt_grenade, #txt_gizeh, #txt_berlin, #txt_nd_paris{
 	display: none;
 }
-#pekin:hover ~ aside #txt_pekin {
-	display: block;
-}
-#txt_agra {
-	display: none;
-}
-#agra:hover ~ aside #txt_agra {
-	display: block;
-}
-#txt_te_paris {
-	display: none;
-}
-#te_paris:hover ~ aside #txt_te_paris {
-	display: block;
-}
-
-#txt_new_york {
-	display: none;
-}
-#new_york:hover ~ aside #txt_new_york {
-	display: block;
-}
-#txt_dc {
-	display: none;
-}
-#dc:hover ~ aside #txt_dc {
-	display: block;
-}
-
-#txt_rome {
-	display: none;
-}
-#rome:hover ~ aside #txt_rome {
-	display: block;
-}
-
-#txt_sydney {
-	display: none;
-}
-#sydney:hover ~ aside #txt_sydney {
-	display: block;
-}
-
-#txt_grenade {
-	display: none;
-}
-#grenade:hover ~ aside #txt_grenade {
-	display: block;
-}
-
-#txt_gizeh {
-	display: none;
-}
-#gizeh:hover ~ aside #txt_gizeh {
-	display: block;
-}
-
-#txt_berlin {
-	display: none;
-}
-#berlin:hover ~ aside #txt_berlin {
-	display: block;
-}
-
-#txt_nd_paris {
-	display: none;
-}
-#nd_paris:hover ~ aside #txt_nd_paris {
+ 
+#pekin:hover ~ aside #txt_pekin, #agra:hover ~ aside #txt_agra, #te_paris:hover ~ aside #txt_te_paris, #new_york:hover ~ aside #txt_new_york, #dc:hover ~ aside #txt_dc, #rome:hover ~ aside #txt_rome, #sydney:hover ~ aside #txt_sydney, #grenade:hover ~ aside #txt_grenade, #gizeh:hover ~ aside #txt_gizeh, #berlin:hover ~ aside #txt_berlin, #nd_paris:hover ~ aside #txt_nd_paris{
 	display: block;
 }
