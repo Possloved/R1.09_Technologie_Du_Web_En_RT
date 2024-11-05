@@ -1,0 +1,161 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+	box-sizing: border-box;
+	background-color: lightgray;
+}
+
+header {
+	grid-area: etiq_header;
+	color: gray;
+	text-align: center;
+}
+
+#conteneur_grid {
+	display: grid;
+	grid-template-columns: 200px 200px 200px 200px 200px auto;
+	grid-template-rows: 80px 200px 200px 200px 200px 200px 80px;
+	grid-gap: 10px;
+	padding: 10px;
+
+	grid-template-areas:
+		"etiq_header etiq_header etiq_header etiq_header etiq_header etiq_header"
+		"etiq_pekin etiq_pekin etiq_pekin etiq_agra etiq_te_paris etiq_aside"
+		"etiq_nd_paris etiq_dc etiq_dc etiq_dc etiq_te_paris etiq_aside"
+		"etiq_new_york etiq_berlin etiq_grenade etiq_grenade etiq_te_paris etiq_aside"
+		"etiq_new_york etiq_gizeh etiq_gizeh etiq_sydney etiq_sydney etiq_aside"
+		"etiq_new_york etiq_gizeh etiq_gizeh etiq_rome etiq_rome etiq_aside"
+		"etiq_footer etiq_footer etiq_footer etiq_footer etiq_footer etiq_footer";
+}
+
+#pekin {
+	grid-area: etiq_pekin;
+}
+#gizeh {
+	grid-area: etiq_gizeh;
+}
+#agra {
+	grid-area: etiq_agra;
+}
+#te_paris {
+	grid-area: etiq_te_paris;
+}
+#new_york {
+	grid-area: etiq_new_york;
+}
+#dc {
+	grid-area: etiq_dc;
+}
+#rome {
+	grid-area: etiq_rome;
+}
+#sydney {
+	grid-area: etiq_sydney;
+}
+#grenade {
+	grid-area: etiq_grenade;
+}
+#berlin {
+	grid-area: etiq_berlin;
+}
+#nd_paris {
+	grid-area: etiq_nd_paris;
+}
+
+aside {
+	grid-area: etiq_aside;
+	color: white;
+	size: 18px;
+	background-color: gray;
+	padding: 10px;
+}
+aside article {
+	font-style: italic;
+	text-align: justify;
+	text-indent: 4em;
+	color: lightgray;
+	font-size: medium;
+}
+aside p {
+	background-color: gray;
+}
+footer {
+	grid-area: etiq_footer;
+	text-align: center;
+	font-size: x-small;
+}
+
+#txt_pekin {
+	display: none;
+}
+#pekin:hover ~ aside #txt_pekin {
+	display: block;
+}
+#txt_agra {
+	display: none;
+}
+#agra:hover ~ aside #txt_agra {
+	display: block;
+}
+#txt_te_paris {
+	display: none;
+}
+#te_paris:hover ~ aside #txt_te_paris {
+	display: block;
+}
+
+#txt_new_york {
+	display: none;
+}
+#new_york:hover ~ aside #txt_new_york {
+	display: block;
+}
+#txt_dc {
+	display: none;
+}
+#dc:hover ~ aside #txt_dc {
+	display: block;
+}
+
+#txt_rome {
+	display: none;
+}
+#rome:hover ~ aside #txt_rome {
+	display: block;
+}
+
+#txt_sydney {
+	display: none;
+}
+#sydney:hover ~ aside #txt_sydney {
+	display: block;
+}
+
+#txt_grenade {
+	display: none;
+}
+#grenade:hover ~ aside #txt_grenade {
+	display: block;
+}
+
+#txt_gizeh {
+	display: none;
+}
+#gizeh:hover ~ aside #txt_gizeh {
+	display: block;
+}
+
+#txt_berlin {
+	display: none;
+}
+#berlin:hover ~ aside #txt_berlin {
+	display: block;
+}
+
+#txt_nd_paris {
+	display: none;
+}
+#nd_paris:hover ~ aside #txt_nd_paris {
+	display: block;
+}
